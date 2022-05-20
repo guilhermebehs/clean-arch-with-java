@@ -6,11 +6,11 @@ import java.util.List;
 public class Student {
 
     private Cpf cpf;
-    private Email name;
-    private String email;
+    private String name;
+    private Email email;
     private List<Phone> phones = new ArrayList<Phone>();
 
-    public Student(Cpf cpf, Email name, String email) {
+    public Student(Cpf cpf, String name, Email email) {
         this.cpf = cpf;
         this.name = name;
         this.email = email;
@@ -30,11 +30,11 @@ public class Student {
         return cpf;
     }
 
-    public Email getName() {
+    public String getName() {
         return name;
     }
 
-    public String getEmail() {
+    public Email getEmail() {
         return email;
     }
 

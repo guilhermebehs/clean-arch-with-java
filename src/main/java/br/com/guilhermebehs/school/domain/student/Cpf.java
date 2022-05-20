@@ -11,4 +11,8 @@ public class Cpf {
             throw new IllegalArgumentException("Invalid CPF number");
         this.number = number;
     }
+
+    public String getNumber() {
+        return number;
+    }
 }

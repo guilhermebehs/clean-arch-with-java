@@ -9,4 +9,8 @@ public class Email {
             throw new IllegalArgumentException("Invalid email address");
         this.address = address;
     }
+
+    public String getAddress() {
+        return address;
+    }
 }

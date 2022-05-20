@@ -32,7 +32,7 @@ public class StudentBuilder {
     }
 
     public Student build(){
-       var student = new Student(cpf,email,name);
+       var student = new Student(cpf,name, email);
        phones.forEach(phone -> student.addPhone(phone));
        return student;
     }
