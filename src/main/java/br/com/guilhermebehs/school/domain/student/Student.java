@@ -7,6 +7,7 @@ public class Student {
 
     private Cpf cpf;
     private String name;
+    private String password;
     private Email email;
     private List<Phone> phones = new ArrayList<Phone>();
 
