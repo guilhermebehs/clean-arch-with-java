@@ -42,4 +42,13 @@ public class Student {
     public List<Phone> getPhones() {
         return phones;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public Student setPassword(String password) {
+        this.password = password;
+        return this;
+    }
 }
