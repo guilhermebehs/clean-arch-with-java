@@ -17,12 +17,9 @@ public class Student {
         this.email = email;
     }
 
-    public Student addPhone(String ddd, String number){
-        phones.add(new Phone(ddd, number));
-        return this;
-    }
-
     public Student addPhone(Phone phone){
+        if(phones.size() == 2)
+            throw new MaxNumberOfPhonesExceededException();
         phones.add(phone);
         return this;
     }

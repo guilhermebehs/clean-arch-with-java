@@ -1,5 +1,6 @@
 package br.com.guilhermebehs.school.application.student.enroll;
 
+import br.com.guilhermebehs.school.domain.student.Phone;
 import br.com.guilhermebehs.school.domain.student.Student;
 import br.com.guilhermebehs.school.domain.student.StudentBuilder;
 
@@ -30,7 +31,7 @@ public class EnrollStudentDto {
                 .setName(this.name)
                 .build();
 
-        phones.forEach(phone -> student.addPhone(phone.getDdd(), phone.getNumber()));
+        phones.forEach(phone -> student.addPhone(new Phone(phone.getDdd(), phone.getNumber())));
 
         return student;
     }
