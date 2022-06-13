@@ -1,7 +1,7 @@
 package br.com.guilhermebehs.school.application.student.enroll;
 
+import br.com.guilhermebehs.school.domain.EventPublisher;
 import br.com.guilhermebehs.school.domain.student.Cpf;
-import br.com.guilhermebehs.school.domain.student.StudentBuilder;
 import br.com.guilhermebehs.school.infra.student.InMemoryStudentRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ class EnrollStudentTest {
     @DisplayName("Should persist student")
     public void shouldPersistStudent(){
         var inMemoryRepo = new InMemoryStudentRepository();
-        var enrollStudent = new EnrollStudent(inMemoryRepo);
+        var enrollStudent = new EnrollStudent(inMemoryRepo, new EventPublisher());
         var student = new EnrollStudentDto("02953279090","guilherme", "guilherme@gmail.com");
 
         enrollStudent.execute(student);
