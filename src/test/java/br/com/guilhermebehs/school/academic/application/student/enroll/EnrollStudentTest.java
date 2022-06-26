@@ -1,6 +1,6 @@
 package br.com.guilhermebehs.school.academic.application.student.enroll;
 
-import br.com.guilhermebehs.school.academic.domain.EventPublisher;
+import br.com.guilhermebehs.school.shared.domain.event.EventPublisher;
 import br.com.guilhermebehs.school.shared.domain.Cpf;
 import br.com.guilhermebehs.school.academic.infra.student.InMemoryStudentRepository;
 import org.junit.jupiter.api.DisplayName;

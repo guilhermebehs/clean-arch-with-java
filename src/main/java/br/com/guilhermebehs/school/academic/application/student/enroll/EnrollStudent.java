@@ -1,6 +1,6 @@
 package br.com.guilhermebehs.school.academic.application.student.enroll;
 
-import br.com.guilhermebehs.school.academic.domain.EventPublisher;
+import br.com.guilhermebehs.school.shared.domain.event.EventPublisher;
 import br.com.guilhermebehs.school.academic.domain.student.StudentHasBeenEnrolledEvent;
 import br.com.guilhermebehs.school.academic.domain.student.StudentRepository;
 

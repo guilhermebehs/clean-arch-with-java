@@ -1,6 +1,4 @@
-package br.com.guilhermebehs.school.academic.domain;
-
-import br.com.guilhermebehs.school.academic.domain.student.Event;
+package br.com.guilhermebehs.school.shared.domain.event;
 
 public abstract class EventListener {
 
