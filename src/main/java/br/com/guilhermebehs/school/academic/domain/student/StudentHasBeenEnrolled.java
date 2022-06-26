@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 
 import static br.com.guilhermebehs.school.shared.domain.event.EventType.STUDENT_HAS_BEEN_ENROLLED;
 
-public class StudentHasBeenEnrolledListener extends EventListener {
+public class StudentHasBeenEnrolled extends EventListener {
 
     @Override
     protected void reactTo(Event event) {
